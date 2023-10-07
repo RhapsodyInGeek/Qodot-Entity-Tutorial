@@ -42,7 +42,7 @@ I mentioned before that every entity has a `classname`, one that we'll get to de
 <img src="../images/entity_example2.png" width=45%>
 <br>
 
-When combined with **TrenchBroom Tags** this feature gains additional powers, like in-editor transparency.
+When combined with [**TrenchBroom Tags**](gameconfig.md#trenchbroom-tags) this feature gains additional powers, like in-editor transparency.
 
 <p align=center><img src="../images/trigger_volume.png" width=75%><br>
 
@@ -89,20 +89,11 @@ Then in Godot, when the map is built and the Worldspawn's `properties` Dictionar
 		env.set_glow_enabled(false)
 		# Background
 		env.set_background(Environment.BG_COLOR);
-		if properties.has("color_bg"):
-			env.set_bg_color(properties["color_bg"]);
-		else:
-			env.set_bg_color(Color());
+		env.set_bg_color(properties["color_bg"]);
 		# Ambient light
 		env.set_ambient_source(Environment.AMBIENT_SOURCE_COLOR);
-		if properties.has("color_ambient"):
-			env.set_ambient_light_color(properties["color_ambient"]);
-		else:
-			env.set_ambient_light_color(Color.hex(0xFFFFFFFF));
-		if properties.has("ambient_light"):
-			env.set_ambient_light_energy(properties["ambient_light"]);
-		else:
-			env.set_ambient_light_energy(0.0);
+		env.set_ambient_light_color(properties["color_ambient"]);
+		env.set_ambient_light_energy(properties["ambient_light"]);
 		env.set_ambient_light_sky_contribution(0.0)
 		# Brightness setup
 		env.set_adjustment_enabled(true)
@@ -130,25 +121,13 @@ func apply_lightmap_properties()->void:
 	lit.get_parent().call_deferred("move_child", lit, 0);
 	lit.set_layer_mask(LIGHT_LAYER_MASK)
 	# Bake Quality
-	if properties.has("lit_quality"):
-		lit.set_bake_quality(properties["lit_quality"] as LightmapGI.BakeQuality)
-	else:
-		lit.set_bake_quality(LightmapGI.BakeQuality.BAKE_QUALITY_MEDIUM);
+	lit.set_bake_quality(properties["lit_quality"] as LightmapGI.BakeQuality)
 	# Bounces
-	if properties.has("lit_bounces"):
-		lit.set_bounces(properties["lit_bounces"] as int)
-	else:
-		lit.set_bounces(3);
+	lit.set_bounces(properties["lit_bounces"] as int)
 	# Lightmapper Probes Subdivision
-	if properties.has("lit_probes_subdiv"):
-		lit.set_generate_probes(properties["lit_probes_subdiv"] as LightmapGI.GenerateProbes)
-	else:
-		lit.set_generate_probes(LightmapGI.GenerateProbes.GENERATE_PROBES_SUBDIV_8);
+	lit.set_generate_probes(properties["lit_probes_subdiv"] as LightmapGI.GenerateProbes)
 	# Use Denoiser
-	if properties.has("lit_denoiser"):
-		lit.set_use_denoiser(properties["lit_denoiser"] as bool);
-	else:
-		lit.set_use_denoiser(true);
+	lit.set_use_denoiser(properties["lit_denoiser"] as bool);
 ```
 
 That's right: during the build process you can have your entities' properties affect other entities or nodes outside of the _QodotMap_ node. This is somewhat advanced Godot scripting, as you do need to understand a bit more about when objects will exist in the _SceneTree_, but it's an extremely powerful tool at your disposal.

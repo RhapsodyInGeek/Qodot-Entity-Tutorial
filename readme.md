@@ -10,8 +10,8 @@ This is a guide and tutorial for the Trenchbroom-to-Godot 4 plugin, [**Qodot**](
 [**What's an Entity?**](docs/entities1.md)<br>
 [**Base Classes and Property Definitions**](docs/baseclass.md)<br>
 [**Solid Entities**](docs/solidclass.md)<br>
-[**Point Entities**](docs/pointclass.md)<br>
 [**Textures!**](docs/textures.md)<br>
+[**Point Entities**](docs/pointclass.md)<br>
 [**Game Configuration**](docs/gameconfig.md)<br>
 [**Forge Game Data**](docs/fgd.md)<br>
 [**Building the QodotMap**](docs/qodotmap.md)<br>
