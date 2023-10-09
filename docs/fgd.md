@@ -3,7 +3,7 @@
 
 > _FGD stands for "Forge Game Data", leftover from when the Half-Life 2 level editor Hammer used to be the Half-Life 1 editor Worldcraft, and before that when it was a Quake tool called Forge._
 
-[<p align=right>**The Level Design Book**](https://book.leveldesignbook.com/appendix/resources/formats/fgd#history)
+<p align=right><a href="https://book.leveldesignbook.com/appendix/resources/formats/fgd#history"><b>The Level Design Book</b></a><br>
 
 If the Game Config file is what tells TrenchBroom about the existence of your game, then the FGD file is what tells TrenchBroom about all of the stuff that's in it.
 

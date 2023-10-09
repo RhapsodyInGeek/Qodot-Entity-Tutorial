@@ -3,7 +3,7 @@
 
 > _Qodot extends the Godot editor to import Quake .map files, and provides a data-driven framework for converting the entities and brushes contained therein into a custom node hierarchy._
 
-[<p align=right>**Official Qodot Overview**](https://github.com/QodotPlugin/Qodot/tree/main#overview)<br>
+<p align=right><a href="https://github.com/QodotPlugin/Qodot/tree/main#overview"><b>Official Qodot Overview</b></a><br>
 
 I know you all came here to learn more about entities but I think it's best to get the right headspace for what Qodot actually does and what it doesn't do. That way we can better understand how to work with it to make our games, and not fall into disappointment or frustration over misunderstandings.
 
