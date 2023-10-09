@@ -1,5 +1,5 @@
 
-## Base Classes and Property Definitions<br>
+## Base Classes and Property Definitions
 
 # The Entity Base Class
 

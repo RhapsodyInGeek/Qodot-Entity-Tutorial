@@ -1,5 +1,5 @@
 
-# TrenchBroom Game Configuration<br>
+# TrenchBroom Game Configuration
 
 One of the two most important resources we'll need is our **TrenchBroom Game Configuration**. Create a new resource within the _res://tb/fgd/_ folder and choose _TrenchBroomGameConfig_.
 

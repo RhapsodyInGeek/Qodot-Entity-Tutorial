@@ -1,5 +1,5 @@
 
-# What's an Entity?<br>
+# What's an Entity?
 
 ## You're an Entity! You're an Entity! You're an Entity!<br>
 
