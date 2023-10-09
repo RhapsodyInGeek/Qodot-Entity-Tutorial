@@ -28,7 +28,7 @@ Set up your project's directory with this structure:
         - **models**
         - **textures**
 
-## Autosave<br>
+## Autosave
 So what's the deal with the _autosave_ folder? Well, TrenchBroom has a handy backup feature where it creates an autosave folder to periodically save backups of your map file. Less useful is the tendency for Godot to import these backups as well.
 
 However, Godot has its own handy feature to combat this. Any directory with a `.gdignore` file will not be scanned and imported by Godot. To save ourselves some headache later, open the **_autosave_** sub-directory in **File Explorer**. Make sure to check under the **View** tab that **File Name Extensions** is enabled. Create a new file in the sub-directory by creating a new **Text Document** and rename it `.gdignore`, exactly like that with the `.txt` extension removed.<br>
@@ -37,7 +37,7 @@ However, Godot has its own handy feature to combat this. Any directory with a `.
 
 And just like that, we won't have to deal with Godot constantly importing hundreds of backup map files from our project! You can do this for any directory that you don't want Godot to import files from.
 
-### Ignore TrenchBroom Models<br>
+### Ignore TrenchBroom Models
 
 We'll also want to ignore the contents of our _res://tb/models/_ folder as well, since they'll be used exclusively for TrenchBroom point entities. There are a few reasons we can't just reuse our Godot GLTFs which we'll go over later, but for now just copy the `.gdignore` file you just created into the _res://tb/models/_ folder.
 

@@ -31,7 +31,7 @@ Let's go ahead and create a new **QodotFGDBaseClass** resource in our _res://tb/
 
 <br>
 
-# Class Properties! (And Their Descriptions!)<br>
+# Class Properties! (And Their Descriptions!)
 
 ## FGD Property Types
 

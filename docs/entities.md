@@ -1,7 +1,7 @@
 
 # What's an Entity?
 
-## You're an Entity! You're an Entity! You're an Entity!<br>
+## You're an Entity! You're an Entity! You're an Entity!
 
 Before we jump into defining our game's entities, we should probably define what an entity _actually is_.
 
@@ -50,7 +50,7 @@ Additionally, TrenchBroom also handles Point Class orientation through the key v
 
 Anyway, just make sure to give a little bit more thought to your naming conventions.
 
-## Key Value Pairs and the Properties Dictionary<br>
+## Key Value Pairs and the Properties Dictionary
 
 This is probably the most powerful feature of Qodot. This is what allows you to do ***anything***. Well, just about anything.
 
