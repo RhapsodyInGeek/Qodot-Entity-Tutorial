@@ -24,4 +24,4 @@ Qodot builds maps by parsing through ***map*** files that use the Quake 1 or Hal
 
 Understanding this concept will hopefully put you on the right path forward to being able to use this wonderfully flexible tool to make some incredible games.
 
-### [**_Next Chapter: Setting Up Your Project >>>_**](fgd.md)
+### [**_Next Chapter: Setting Up Your Project >>>_**](setup.md)

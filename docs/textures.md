@@ -1,10 +1,10 @@
 
 # Textures!
 
-***How Textures Work: Trenchbroom***<br>
-To get textures to show up in your map file, you need to point TrenchBroom to the game's location. You do this by finding 
+It may seem weird that we're only just now getting to Textures in the 9th inning, but we've been ordering our operations by inheritance so far and the only things that need to know about our textures are TrenchBroom and the QodotMap node.
 
-***How Textures Work: Qodot***<br>
+### How Textures Work In Qodot
+
 If you take a look at a _.map_ file, you'll see that it's just a text file describing the makeup of your map and doesn't actually store any other data, including texture images. Let's look at this example of a **Solid Entity** in a map file:<br>
 
 <p align=center><img src="../images/solidEnt00.png" height=250 /><br>
@@ -25,18 +25,21 @@ If you take a look at a _.map_ file, you'll see that it's just a text file descr
 }
 ```
 
-This is a `wall` entity from the built-in example `Qodot.fgd`. As you can see, the map file structure is pretty straight-forward. This particular map uses the Valve 220 format, having additional options for UV mapping. Each line in a brush definition describes a face on the brush, and within that you can see that our texture is defined as just its location relative to the map's texture folder or WAD file.
+This is a `wall` entity from the built-in example `Qodot.fgd`. As you can see, the map file structure is pretty straight-forward. This particular map uses the Valve 220 format, having additional options for UV mapping. Each line in a brush definition describes a face on the brush, and within that you can see that our texture is defined as just its location relative to the game's texture folder or map's WAD file.
 
 _But if that's the case, how does Qodot know what file to use?_<br>
 QodotMap nodes have several properties that help define and apply textures to your meshes on build:
 
-| Property | Description |
-| --- | --- |
-| `Base Texture Dir` | Root folder where your Godot map textures are located |
-| `Texture File Extensions` | The extensions to search for if no matching material is found |
-| `Texture Wads` | Array of WAD resources to search through |
-| `Material File Extension` | Format for custom texture materials, can be _.tres_, _.res_ or _.material_ |
-| `Default Material` | The default material that Qodot builds your map's materials from |
+- `Base Texture Dir` : Root folder where your Godot map textures are located
+
+- `Texture File Extensions` : The extensions to search for if no matching material is found
+
+- `Texture Wads` : Array of WAD resources to search through
+
+- `Material File Extension` : Format for custom texture materials, can be _.tres_, _.res_ or _.material_
+
+- `Default Material` : The default material that Qodot builds your map's materials from
+
 <br>
 
 <p align=center><img src="../images/mapNode.png" /><br>
@@ -53,5 +56,18 @@ I dunno, I don't use them and I don't recommend you use them either.
 _What if I really want to use WADs?_<br>
 Good luck!
 
-_So what does this expositional onslaught mean for us?_<br>
-Well, the neat thing about how Qodot handles map textures is that we can technically use a completely different folder in TrenchBroom and even different image formats than the location and formats we keep them in Godot. This can be useful for advanced users, but for now we'll keep both our TrenchBroom textures and our Godot map textures unified.
+The neat thing about how Qodot handles map textures is that we can technically use a completely different folder in TrenchBroom and even different image formats than the location and formats we keep them in Godot. This can be useful for advanced users, but for now we'll keep both our TrenchBroom textures and our Godot map textures unified.
+
+## _Why Are My Textures Blurry!?_
+
+I mentioned previously that QodotMap nodes use a _Default Material_ as a base material to apply our textures as albedo to. You can and should override the built-in default with your own.
+
+The built-in default uses **Linear Mip-map Sampling**, which means each pixel of the texture will smoothly interpolate to each value. On larger textures and smaller inverse scale factors this isn't a problem, but for those of you trying to create a crunchy retro look this can be undesirable.
+
+Create a new **StandardMaterial3D** resource in the _res://tb/textures/_ folder and call it `qodot_default.tres`. You can customize this however you'd like: this will be the base that a QodotMap with this set on it will use to create materials out of your textures.
+
+The important setting to get that crunchy pixellated look is **Sampling**. Change this to **Nearest** or **Nearest Mip-map** and stop opening issues for it on the Qodot GitHub.
+
+We'll go over setting the _Default Material_ again in 2 chapters, but first I have an important announcement to make.
+
+### [**_Next Chapter: Finally. TrenchBroom. >>>_**](trenchbroom.md)
