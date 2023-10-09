@@ -185,7 +185,7 @@ Upon building, Qodot will sum all of the enabled bit values to provide a single 
 
 While it's not too big of a deal to create simple String, integer, float, or Vector3 properties, Choices and Flags can be a bit cumbersome. Fortunately, Godot has got you covered!
 
-The brilliant thing about **.tres** format is that it is a _text resource_, meaning we can open them up in our favorite code text editors like [**Visual Studio Code**](https://code.visualstudio.com/), which has extensions for Godot Support.
+The brilliant thing about the **.tres** format is that it is a _text resource_, meaning we can open them up in our favorite code text editors like [**Visual Studio Code**](https://code.visualstudio.com/), which has extensions for Godot Support.
 
 Taking a look at our ***target_base.tres*** code, we can see it's pretty clear what's going on:
 
