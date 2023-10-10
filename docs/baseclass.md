@@ -1,3 +1,22 @@
+<p align=center>
+<a href="../readme.md">Home</a> |
+<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/setup.md">Setting Up Your Project</a> | 
+<a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
+<a href="docs/entities.md">What's an Entity?</a> | 
+<a href="docs/baseclass.md">Base Classes and Property Definitions</a> | 
+<a href="docs/solidclass.md">Solid Entities</a> | 
+<a href="docs/pointclass.md">Point Entities, Part 1</a> | 
+<a href="docs/pointclass2.md">Point Entities, Part 2</a> | 
+<a href="docs/gameconfig.md">Game Configuration</a> | 
+<a href="docs/fgd.md">Forge Game Data</a> | 
+<a href="docs/textures.md">Textures!</a> | 
+<a href="docs/trenchbroom.md">Finally. TrenchBroom.</a> | 
+<a href="docs/qodotmap.md">Building the QodotMap</a> | 
+<a href="docs/resources.md">Helpful Resources</a>
+</p>
+
+---
 
 ## Base Classes and Property Definitions
 
@@ -185,7 +204,7 @@ Upon building, Qodot will sum all of the enabled bit values to provide a single 
 
 While it's not too big of a deal to create simple String, integer, float, or Vector3 properties, Choices and Flags can be a bit cumbersome. Fortunately, Godot has got you covered!
 
-The brilliant thing about the **.tres** format is that it is a _text resource_, meaning we can open them up in our favorite code text editors like [**Visual Studio Code**](https://code.visualstudio.com/), which has extensions for Godot Support.
+The brilliant thing about the **.tres** format is that it is a _text resource_, meaning we can open them up in our favorite code text editors like [**Visual Studio Code**](https://code.visualstudio.com/), which has extensions for Godot support.
 
 Taking a look at our ***target_base.tres*** code, we can see it's pretty clear what's going on:
 
@@ -333,3 +352,23 @@ That's how the previous version of Qodot worked in Godot 3.x, but was changed fo
 This covers pretty much all you need to know about **Base Classes** and **Class Properties**. We're still not quite ready yet to build our GameConfig and FGD though. Before we can do that we have to build our first actual entity!
 
 ### [**_Next Chapter: Solid Class Entities >>>_**](solidclass.md)
+
+---
+
+<p align=center>
+<a href="../readme.md">Home</a> |
+<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/setup.md">Setting Up Your Project</a> | 
+<a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
+<a href="docs/entities.md">What's an Entity?</a> | 
+<a href="docs/baseclass.md">Base Classes and Property Definitions</a> | 
+<a href="docs/solidclass.md">Solid Entities</a> | 
+<a href="docs/pointclass.md">Point Entities, Part 1</a> | 
+<a href="docs/pointclass2.md">Point Entities, Part 2</a> | 
+<a href="docs/gameconfig.md">Game Configuration</a> | 
+<a href="docs/fgd.md">Forge Game Data</a> | 
+<a href="docs/textures.md">Textures!</a> | 
+<a href="docs/trenchbroom.md">Finally. TrenchBroom.</a> | 
+<a href="docs/qodotmap.md">Building the QodotMap</a> | 
+<a href="docs/resources.md">Helpful Resources</a>
+</p>

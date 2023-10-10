@@ -1,4 +1,24 @@
 
+<p align=center>
+<a href="../readme.md">Home</a> |
+<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/setup.md">Setting Up Your Project</a> | 
+<a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
+<a href="docs/entities.md">What's an Entity?</a> | 
+<a href="docs/baseclass.md">Base Classes and Property Definitions</a> | 
+<a href="docs/solidclass.md">Solid Entities</a> | 
+<a href="docs/pointclass.md">Point Entities, Part 1</a> | 
+<a href="docs/pointclass2.md">Point Entities, Part 2</a> | 
+<a href="docs/gameconfig.md">Game Configuration</a> | 
+<a href="docs/fgd.md">Forge Game Data</a> | 
+<a href="docs/textures.md">Textures!</a> | 
+<a href="docs/trenchbroom.md">Finally. TrenchBroom.</a> | 
+<a href="docs/qodotmap.md">Building the QodotMap</a> | 
+<a href="docs/resources.md">Helpful Resources</a>
+</p>
+
+---
+
 # Solid Entities
 
 Qodot refers to any entity constructed with brush work as a **Solid Entity**. It isn't entirely accurate to call them _solid_ since we don't actually need to provide these entities with collision. We also don't need to provide these entities with meshes from the brush work either. This is cool, because it means we have a lot of flexibility in how to construct our maps.
@@ -20,6 +40,18 @@ The example Worldspawn entity is defined as a Solid Class StaticBody3D with conv
 > _NOTE: Setting Worldspawn as a Point Class may have undefined side effects due to being able to place a 2nd Worldspawn in your map. It is recommended that any Worldspawn definition be a Solid Class._
 
 If you wish to use the pre-existing Worldspawn (or any other pre-existing example entity) as a base, make sure to copy it out of the `addons` directory and into your project's _res://tb/fgd/_ directory. If you update Qodot, it will overwrite any changes you made to the example entities, potentially breaking your game.
+
+### WorldspawnLayers
+
+The official example scene for them has a readme node that describes WorldspawnLayers as this:
+
+> In Quake, there are certain textures that apply special behavior or properties to brushes, such as water, slime, and lava. Worldspawn layers are the Qodot equivalent - scriptable volumes defined by a texture that don't have a FGD entry or properties as an entity would.
+> 
+> Worldspawn layers are defined as a `Resource` subclass in Godot, and are plugged into the `Worldspawn Layers` property of QodotMap in order to supply the requisite information to the build system. You can define their name, texture, visual build, collision type, and associated script in order to implement custom behavior.
+
+Honestly, with the strength of the entities system this feature seems superfluous. The WorldspawnLayer system always felt more like a misguided method to try to shoehorn an aspect of Quake workflow into Godot after already having an entity system in place that works far better with far more flexibility. Additionally, the feature seems to be a little busted in the Godot 4 version of Qodot.
+
+In any case, we won't be using WorldspawnLayers or even Worldspawn for our project.
 
 ### Why Not Worldspawn?
 
@@ -167,3 +199,23 @@ _So now we're ready to build some maps, yeah!?_
 No.
 
 ### [**_Next Chapter: Point Class Entities, Part 1 >>>_**](pointclass.md)
+
+---
+
+<p align=center>
+<a href="../readme.md">Home</a> |
+<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/setup.md">Setting Up Your Project</a> | 
+<a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
+<a href="docs/entities.md">What's an Entity?</a> | 
+<a href="docs/baseclass.md">Base Classes and Property Definitions</a> | 
+<a href="docs/solidclass.md">Solid Entities</a> | 
+<a href="docs/pointclass.md">Point Entities, Part 1</a> | 
+<a href="docs/pointclass2.md">Point Entities, Part 2</a> | 
+<a href="docs/gameconfig.md">Game Configuration</a> | 
+<a href="docs/fgd.md">Forge Game Data</a> | 
+<a href="docs/textures.md">Textures!</a> | 
+<a href="docs/trenchbroom.md">Finally. TrenchBroom.</a> | 
+<a href="docs/qodotmap.md">Building the QodotMap</a> | 
+<a href="docs/resources.md">Helpful Resources</a>
+</p>

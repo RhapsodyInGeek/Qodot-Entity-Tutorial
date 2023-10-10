@@ -24,3 +24,4 @@ With the fanfare and warnings out of the way, let's get right to it!
 [**Textures!**](docs/textures.md)<br>
 [**Finally. TrenchBroom.**](docs/trenchbroom.md)<br>
 [**Building the QodotMap**](docs/qodotmap.md)<br>
+[**Helpful Resources**](docs/resources.md)<br>
