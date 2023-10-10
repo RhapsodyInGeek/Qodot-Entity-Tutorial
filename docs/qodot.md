@@ -39,7 +39,7 @@ Qodot does not compile maps into BSPs. It has no concept of _vis_, no concept of
 This is ***not*** a weakness of the plugin. This is a ***strength***. What you map is what you get. This makes it more reliable than a compiled BSP, since you get to choose what faces get culled and how your collision is generated. This guide will help teach you how to take advantage of this.
 
 ### ***Qodot is an interpreter.***
-Qodot builds maps by parsing through ***map*** files that use the Quake 1 or Half-Life 1 formatting. It does this through a combination of understanding brush construction and Entity Definition resources. What you put in is what you get out.
+Qodot builds maps by parsing through **map** files that use the Quake 1 or Half-Life 1 formatting. It does this through a combination of understanding brush construction and Entity Definition resources. What you put in is what you get out.
 
 Understanding this concept will hopefully put you on the right path forward to being able to use this wonderfully flexible tool to make some incredible games.
 
