@@ -24,7 +24,7 @@
 
 Before we jump into defining our game's entities, we should probably define what an entity _actually is_.
 
-In terms of how to map with the TrenchBroom > Qodot > Godot pipeline, i'ts best to think of entities in Quake design terms. That is to say, _everything_ is an entity: the player, the enemies, the ambient sounds, the doors, the lifts, the trigger areas, the map geometry itself… all of these should be thought of as **entities**.
+In terms of how to map with the TrenchBroom > Qodot > Godot pipeline, it's best to think of entities in Quake design terms. That is to say, _everything_ is an entity: the player, the enemies, the ambient sounds, the doors, the lifts, the trigger areas, the map geometry itself… all of these should be thought of as **entities**.
 
 TrenchBroom and Qodot support 2 different kinds of entities: **Solid (Brush) Entities** and **Point Entities**. Once we understand these 2 entity types and the full flexibility that Qodot offers us, we can completely design our maps in TrenchBroom and have Qodot translate them into Godot.
 
