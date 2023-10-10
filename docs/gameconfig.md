@@ -1,6 +1,6 @@
 <p align=center>
 <a href="../readme.md">Home</a> |
-<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/qodot.md">What <i>IS</i> Qodot?</a> | 
 <a href="docs/setup.md">Setting Up Your Project</a> | 
 <a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
 <a href="docs/entities.md">What's an Entity?</a> | 
@@ -104,7 +104,7 @@ While we _could_ use the default example _qodot_fgd.tres_ that comes built-in, w
 
 <p align=center>
 <a href="../readme.md">Home</a> |
-<a href="docs/qodot.md">What _IS_ Qodot?</a> | 
+<a href="docs/qodot.md">What <i>IS</i> Qodot?</a> | 
 <a href="docs/setup.md">Setting Up Your Project</a> | 
 <a href="docs/gamemanager.md">The Game Manager Autoload</a> | 
 <a href="docs/entities.md">What's an Entity?</a> | 
