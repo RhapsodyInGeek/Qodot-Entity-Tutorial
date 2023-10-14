@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -141,5 +142,6 @@ Don't forget to add our new GameManager to our project autoloads! For the purpos
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

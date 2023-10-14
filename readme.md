@@ -25,3 +25,4 @@ With the fanfare and warnings out of the way, let's get right to it!
 [**Finally. TrenchBroom.**](docs/trenchbroom.md)<br>
 [**Building the QodotMap**](docs/qodotmap.md)<br>
 [**Helpful Resources**](docs/resources.md)<br>
+[**Frequently Asked Qodots**](docs/faq.md)<br>

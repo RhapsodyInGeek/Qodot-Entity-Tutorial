@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -168,5 +169,6 @@ Another one down, and we haven't even broken a sweat. While we could do this as 
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

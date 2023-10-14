@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -370,5 +371,6 @@ This covers pretty much all you need to know about **Base Classes** and **Class 
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

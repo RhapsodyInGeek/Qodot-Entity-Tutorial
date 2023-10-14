@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -208,9 +209,11 @@ When we export the FGD resource it's added to, we get this output:
 ]
 ```
 
-If our `marsfrog.glb` were scaled up then we could just do the same thing: put in the model path inside quotes and be done with it. But since he's not we'll have to use a TrenchBroom / FGD feature called `scale_expression`.
+If our `marsfrog.glb` were scaled up then we could just do the same thing: put in the model path inside quotes and be done with it. But since he's not we'll have to use a TrenchBroom feature called `scale_expression`.
 
-[**Let's see what the TrenchBroom docs have to say on it**](https://trenchbroom.github.io/manual/latest/#display-models-for-entities):
+TrenchBroom offers you the ability to set a scale expression in one of two places: the Game Configuration file, or in the FGD on a per-entity basis. Right now we'll explore the per-entity method to better understand how to apply scale expression, then in a later chapter we'll look at the Game Configuration method. In some cases you may wish to take advantage of both at the same time.
+
+First things first though, [**let's see what the TrenchBroom docs have to say on scale expression**](https://trenchbroom.github.io/manual/latest/#display-models-for-entities):
 
 > Each entity definition should contain only one model definition, and the expression in the model definition should evaluate either to a value of type string or to a value of type map. If the expression evaluates to a map, it must have the following structure:
 > ```
@@ -235,7 +238,7 @@ model({
 
 In our Marsfrog resource's _Meta Properties_ we'll add a new entry with the **String** key of `model` and the **String** value `{"path": "models/marsfrog.glb", "scale": 32}`.
 
-> _NOTE: There is a [**TrenchBroom GameConfig feature**](https://trenchbroom.github.io/manual/latest/#game_configuration_files_entities) that allows you to set a default scale for all entity models. This is not currently implemented in Qodot but [**I did make a pull request**](https://github.com/QodotPlugin/Qodot/pull/91) for it._
+> _NOTE: If you choose to set a game-wide scale expression in your Game Configuration resource, setting this entity's scale expression will override the Game Configuration scale._
 
 ### Script Class and Node Class
 
@@ -264,5 +267,6 @@ I know, I know, it's tough not seeing the fruits of your labor yet. But don't wo
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

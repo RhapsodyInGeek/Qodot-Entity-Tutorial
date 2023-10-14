@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -21,6 +22,9 @@
 # Helpful Resources
 
 ### Godot and Qodot
+
+> [**Official Godot 4 Latest Stable Documentation**](https://docs.godotengine.org/en/stable/)<br>
+This may seem obvious or sarcastic, but I swear this is probably the best source for almost all of the answers to almost all of your questions. This is your best friend. I've found that most Qodot questions people have are really just Godot questions that don't involve Qodot at all. If you need to know how to do something in Godot, it's in this manual.
 
 > [**Official Qodot Discord**](https://discord.gg/c72WBuG)<br>
 This is one of my frequent stomping grounds. If you've got questions on Qodot or Godot, we've got some extremely helpful community members who are generally happy to answer them. Be respectul and patient: we're all volunteers, doing this on our free time and out of a love for the community.
@@ -70,5 +74,6 @@ Free and open source paint application that serves really well as an Adobe Photo
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

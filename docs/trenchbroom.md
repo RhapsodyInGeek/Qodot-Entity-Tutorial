@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -58,9 +59,9 @@ With Godot we need to think of these brushes as what they'll become in-engine: c
 
 <p align=center><img src="../images/skip.png" width=20%>
 
-The **Skip** texture is arguably our most important texture when mapping for Godot. Whatever texture is set as the QodotMap's Skip texture will be used to cull any face textured with it from the generated mesh. Currently this only applies to the Mesh resource, but some of us are almost done implementing a change that will allow it to remove faces from generated **ConcavePolygonShape3Ds**.
+The **Skip** texture is arguably our most important texture when mapping for Godot. Whatever texture is set as the QodotMap's Skip texture will be used to cull any face textured with it from the generated geometry. In a **Convex** collision entity this only removes the faces from the final **MeshInstance3D**, but in a **Concave** collision entity this also removes the faces from the **CollisionPolygonShape3D**.
 
-The **Clip** texture will cull the Mesh face, too. In a future update it will maintain collision on a Concave Solid Entity, as opposed to Skip's future removal of it. Just keep in mind the general rule of thumb: if you want your entities to collide with it, use Clip.
+The **Clip** texture will cull the Mesh face, too, while also maintaining collision on a Concave Solid Entity (_as opposed to Skip's future removal of it_). Just keep in mind the general rule of thumb: if you want your entities to collide with the brush, use Clip.
 
 Let's go ahead and fix our map up. Build a small room with a 256x256 floor and no roof and turn it into a `func_geo` brush entity. Then completely texture it with _Skip_. We should have something like this.
 
@@ -119,5 +120,6 @@ Once you've saved the map file, it's time to go back to Godot.
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

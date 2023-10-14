@@ -13,7 +13,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -40,13 +41,17 @@ The TrenchBroom Game Configuration resource defines where TrenchBroom is located
 
     > _NOTE: Using more than one FGD resource in this property is currently bugged. Only the first FGD file will be used. If wishing to use multiple FGDs, use the `Base Fgd Files` property in the FGD resource._
 
+- `Entity Scale` : A game-wide display model scale expression. It's recommended you set this to your typical inverse scale ratio so that your display models show up at the right size in TrenchBroom. Stacks with the Point Class entity's model scale definition. Please consult the official [**TrenchBroom GameConfig docs**](https://trenchbroom.github.io/manual/latest/#game_configuration_files_entities) for more information.
+
+- `Default UV Scale` : When textures are first applied or when resetting UV modifications on a brush, this is the scale they are set to. Only affects TrenchBroom. Generated meshes will only have the final texture UVs as defined by your map file. Can be useful if you use higher res textures but want a more manageable inverse scale ratio.
+
 - `Brush Tags` : An array of _TrenchBroomTag_ resources. While these tags have no Godot or Qodot import functionality, they do modify certain TrenchBroom brush settings like transparency. Useful for _trigger_ brushes.
 
 - `Face Tags` : An array of _TrenchBroomTag_ resources. This one's for per texture settings, again mostly for transparency. Useful for _clip_ and _skip_ textures.
 
 - `Face Attrib Surface Flags` / `Face Attrib Content Flags` : Currently unused by Qodot.
 
-Select your TrenchBroom games folder and set your game's name and icon. Ignore the FGD files for now. We'll get to that later
+Select your TrenchBroom games folder and set your game's name and icon. Ignore the FGD files for now. We'll get to that later.
 
 ## TrenchBroom Tags<br>
 
@@ -117,5 +122,6 @@ While we _could_ use the default example _qodot_fgd.tres_ that comes built-in, w
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>

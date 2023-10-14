@@ -14,7 +14,8 @@
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
 
 ---
@@ -115,13 +116,21 @@ Create a new **QodotFGDSolidClass** resource in our _res://tb/fgd/solid/_ folder
 
     - **Convex** : Qodot will generate identical CollisionShape3D nodes for each brush in this entity. This ignores mesh face culling by _clip_ and _skip_ textures.
 
-    - **Concave** : Qodot will generate a single concave CollisionShape3D node. This currently ignores mesh face culling by _clip_ and _skip_. In the future it will only ignore culling by _clip_ while removing _skip_ faces from the final collision.
+    - **Concave** : Qodot will generate a single concave CollisionShape3D node. This ignores mesh face culling by _clip_ while removing _skip_ faces from the final collision.
+
+- `Collision Layer` : The physics layers this SolidClass will be set in upon build.
+
+- `Collision Mask` : The physics layers this SolidClass will be set to scan upon build.
+
+- `Collision Priority` : The priority used to solve colliding when occurring penetration. The higher the priority is, the lower the penetration into the SolidClass will be. Typically not needed unless you have issues with nodes going through colliders.
+
+- `Collision Shape Margin` : Shape margins are the "fuzziness" around the collider that assist with collision detection. Not used in Godot Physics, but may be used in other physics implementations.
 
 - `Script Class` : The GD or C# script to apply to this entity.
 
 The remaining Solid Class properties are all the familiar ones we saw from the [**QodotFGDBaseClass**](baseclass.md#the-entity-base-class) resource.
 
-We'll start from the top and make sure our _Spawn Type_ is set to `Entity`. We'll leave _Build Visuals_ on. For the _Collision Build_ I'll leave this up to you. I personally use **Concave** collision for my static geometry, [**but you may want to educate yourself on the pros and cons of both**](https://docs.godotengine.org/en/stable/tutorials/physics/collision_shapes_3d.html#convex-collision-shapes).
+We'll start from the top and make sure our _Spawn Type_ is set to `Entity`. We'll leave _Build Visuals_ on. For the _Collision Build_ I'll leave this up to you. I personally use **Concave** collision for my static geometry, [**but you may want to educate yourself on the pros and cons of both**](https://docs.godotengine.org/en/stable/tutorials/physics/collision_shapes_3d.html#convex-collision-shapes). It's also safe to leave the remaining collision properties alone for our purposes here, but it might be useful to know them for your own future entities.
 
 ### Writing our func_geo.gd Script
 
@@ -217,5 +226,6 @@ No.
 <a href="textures.md">Textures!</a> | 
 <a href="trenchbroom.md">Finally. TrenchBroom.</a> | 
 <a href="qodotmap.md">Building the QodotMap</a> | 
-<a href="resources.md">Helpful Resources</a>
+<a href="resources.md">Helpful Resources</a> |
+<a href="faq.md">Frequently Asked Qodots</a> 
 </p>
