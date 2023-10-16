@@ -22,6 +22,13 @@
 # Frequently Asked Qodots
 
 [Why are my textures blurry?](#why-are-my-textures-blurry)<br>
+[Can I do...](#can-i-do)<br>
+[Why are my new entities not building? Why can't I find them in TrenchBroom?](#why-are-my-new-entities-not-building-why-cant-i-find-them-in-trenchbroom)<br>
+[Help! I manually added some nodes to my QodotMap and when I hit build again they all disappeared!](#help-i-manually-added-some-nodes-to-my-qodotmap-and-when-i-hit-build-again-they-all-disappeared)<br>
+[How do I split up my map? It only comes out as one big mesh](#how-do-i-split-up-my-map-it-only-comes-out-as-one-big-mesh)<br>
+[I'm getting a lot of overdraw, why doesn't Qodot get rid of unseen faces?](#im-getting-a-lot-of-overdraw-why-doesnt-qodot-get-rid-of-unseen-faces)<br>
+[How do I set multiple model options in one Point Entity, like a `misc_model` or `prop_dynamic`?](#how-do-i-set-multiple-model-options-in-one-point-entity-like-a-misc_model-or-prop_dynamic)<br>
+[Why are my textures blurry?](#why-are-my-textures-blurry-1)<br>
 
 ### Why are my textures blurry?
 
