@@ -55,7 +55,11 @@ The _QodotFGDFile_ resource defines our FGD file. We'll go over that in a later 
 
 ## Naming Patterns
 
-I mentioned before that every entity has a `classname`, one that we'll get to define in our Entity Definition resource. One important consideration to make is that _naming conventions matter_. The first word of an entity's name up until the first underscore will be provided its own group in TrenchBroom. Taking advantage of this can help keep your entities organized in a few spots and provide convenient filtering options.
+I mentioned before that every entity has a `classname`, one that we'll get to define in our Entity Definition resource.
+
+> _NOTE: Entity Classnames are **NOT** optional. Qodot uses these classnames to both generate the FGD file for TrenchBroom and to know what to build in Godot. Remember to **always** supply a `Classname`!_
+
+One important consideration to make is that _naming conventions matter_. The first word of an entity's name up until the first underscore will be provided its own group in TrenchBroom. Taking advantage of this can help keep your entities organized in a few spots and provide convenient filtering options.
 
 <p align=center>
 <img src="../images/entity_example1.png" width=45%>

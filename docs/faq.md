@@ -21,6 +21,8 @@
 
 # Frequently Asked Qodots
 
+[Why are my textures blurry?](#why-are-my-textures-blurry)<br>
+
 ### Why are my textures blurry?
 
 [**Please don't skim through the tutorial.**](textures.md#why-are-my-textures-blurry)
@@ -28,6 +30,10 @@
 ### Can I do...
 
 Yes.
+
+### Why are my new entities not building? Why can't I find them in TrenchBroom?
+
+Double check to make sure you set a [**`Classname`**](entities.md#naming-patterns) in the entity resource before you exported the FGD. If this doesn't exist, Qodot will skip adding it to the FGD file and upon building your map.
 
 ### Help! I manually added some nodes to my QodotMap and when I hit build again they all disappeared!
 
