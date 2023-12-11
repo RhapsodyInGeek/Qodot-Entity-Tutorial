@@ -60,7 +60,7 @@ extends Camera3D
 		properties = value
 		if !Engine.is_editor_hint():
 			return
-		rotation = GameManager.demangler(properties, 2)
+		rotation_degrees = GameManager.demangler(properties, 2)
 	get:
 		return properties
 ```
